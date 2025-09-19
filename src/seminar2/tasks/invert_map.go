@@ -1,5 +1,9 @@
 package tasks
 
-func invertMap[K comparable, V comparable](_ map[K]V) map[V]K {
-	return make(map[V]K)
+func invertMap[K comparable, V comparable](s map[K]V) map[V]K {
+	a := make(map[V]K)
+	for k, v := range s {
+		a[v] = k
+	}
+	return a
 }
