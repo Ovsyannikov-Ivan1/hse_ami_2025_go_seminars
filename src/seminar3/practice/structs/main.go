@@ -37,8 +37,8 @@ type Counter struct {
 	value int
 }
 
-// GetValue Value receiver (работает с копией)
-func (c Counter) GetValue() int {
+// GetValue Pointer receiver (работает с копией)
+func (c *Counter) GetValue() int {
 	return c.value
 }
 

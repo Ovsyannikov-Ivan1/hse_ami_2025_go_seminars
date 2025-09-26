@@ -83,6 +83,8 @@ func main() {
 
 	nums := []int{1, 2, 3, 4}
 	fmt.Println(sum(nums...))
+	nums = append(nums, []int{5, 6}...)
+	nums = append(nums, 5, 6)
 
 	result, err := process([]byte{})
 	if err != nil {

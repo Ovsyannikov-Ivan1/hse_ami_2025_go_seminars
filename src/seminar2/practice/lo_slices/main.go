@@ -22,7 +22,7 @@ func main() {
 		Age  int
 	}
 	people := []Person{
-		{"Alice", 30},
+		{Name: "Alice", Age: 30},
 		{"Bob", 25},
 		{"Charlie", 40},
 	}
